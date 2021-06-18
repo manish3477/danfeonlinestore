@@ -1,0 +1,50 @@
+.payment-options{
+    max-width: 500px;
+border: 2px solid #5159ca;
+border-radius: 5px;
+padding: 30px;
+margin: 50px auto;
+}
+
+.payment-options h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+  .option {
+  display: flex;
+  
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-items: inline-block;
+ 
+}
+
+.option input {
+    cursor: pointer;
+    width: 20px;
+    color: #5159ca;
+}
+
+.payment-options  button {
+     width: 100%;
+height: 40px;
+margin: 10px 0;
+padding: 0 5px;
+outline: #5159ca;
+border: 1px solid #5159ca;
+width: 150px;
+background: #5159ca;
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+
+}
+.option > div {
+    display: inline-flex;
+    margin-left: 10px;
+}

@@ -1,0 +1,145 @@
+
+
+.herosection{
+    height: 80vh;
+    max-height: 1100px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.herowrapper{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.HeroSlide{
+    z-index: 1;
+     width: 100%;
+     height: 100%;
+}
+
+.HeroSlider{
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.HeroSlider::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    bottom: 0vh;
+    left: 0;
+    overflow: hidden;
+    opacity: 0.7;
+    background: linear-gradient(
+        0deg,
+     rgba(0,0,0,0.2) 0%,
+     rgba(0,0,0,0.2) 50%, 
+     rgba(0,0,0,0.6) 100%);
+}
+
+.HeroImage{
+    position: absolute;
+ top: 0;
+ left: 0;
+ height: 80vh;
+ width: 100vw;
+ object-fit: cover;
+}
+
+.HeroContent{
+    position: relative;
+ z-index: 10;
+ display: flex;
+ flex-direction: column;
+ max-width: 1600px;
+ width: calc(100%-100px);
+ color:#fff;
+ padding: 0 1rem;
+}
+
+.Button{
+    
+}
+
+.Arrow{
+    margin-left: 0.5rem;
+}
+
+.SliderButton{
+   
+        display: flex;
+        z-index: 10;
+        cursor: pointer;
+}
+
+.icon_right   {
+    width: 50px;
+        height: 50px;
+        color: #fff;
+        cursor: pointer;
+        background: #000d1a;
+        border-radius: 50px;
+        padding: 10px;
+        margin-right: 1rem;
+        user-select: none;
+        transition: 0.3s;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+}
+
+.icon_right:hover
+{
+    background: #cda53f;
+    transform: scale(1.05);
+}
+
+.icon_left   {
+    width: 50px;
+        height: 50px;
+        color: #fff;
+        curosr: pointer;
+        background: #000d1a;
+        border-radius: 50px;
+        padding: 10px;
+        margin-right: 1rem;
+        user-select: none;
+        transition: 0.3s;
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+}
+
+.icon_left:hover
+{
+    background: #cda53f;
+    transform: scale(1.05);
+}
+
+.icon_left i {
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.icon_right i {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
